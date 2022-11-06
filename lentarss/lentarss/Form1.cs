@@ -98,7 +98,7 @@ namespace lentarss
                 rootTag = XElement.Load(textBox1.Text);
             } catch(Exception ex) {
                 //MessageBox.Show(,"Error trying to load this rss channel!\n" + ex.Message,"Error!","Error!",MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("Error trying to load this rss channel!\n", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Exception!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             
